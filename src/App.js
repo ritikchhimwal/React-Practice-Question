@@ -12,10 +12,15 @@ import FileUploader from './FileUploader';
 import Authentication from './Authentication';
 import Weather from './Weather';
 import FilterList from './FilterList';
+import Pagination from './Pagination';
+import ColorPicker from './ColorPicker';
+import ResponsiveNavigation from './ResponsiveNavigation';
+import LightDark from './LightDark';
+import LightDarkComp from './LightDarkComp';
+import { ThemeProvider } from './LightDarkThemeContext';
 
 const App = () => {
-  //for FilterList 
-  const items = ['Alpha','Beta','Gama','Delta','Fifa'];
+  //const items = ['Alpha','Beta','Gama','Delta','Fifa'];
   return (
     <div>
         {/*<Counter />*/}
@@ -30,8 +35,14 @@ const App = () => {
         {/*<FileUploader />*/}
         {/*<Authentication />*/}
         {/*<Weather />*/}
-        // using props here
-        <FilterList items = {items}/>
+        {/*<FilterList items = {items}/>*/}
+        {/*<Pagination items={items} itemsPerPage={2}/>*/}
+        {/*<ColorPicker/>*/}
+        {/*<ResponsiveNavigation/>*/}
+        <ThemeProvider>
+           <LightDark />
+           <LightDarkComp />
+        </ThemeProvider>
     </div>
   )
 }
