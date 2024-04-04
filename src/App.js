@@ -38,7 +38,7 @@ const App = () => {
         {/*<FilterList items = {items}/>*/}
         {/*<Pagination items={items} itemsPerPage={2}/>*/}
         {/*<ColorPicker/>*/}
-        {/*<ResponsiveNavigation/>*/}
+        <ResponsiveNavigation/>
         <ThemeProvider>
            <LightDark />
            <LightDarkComp />
